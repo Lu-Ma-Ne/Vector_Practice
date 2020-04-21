@@ -17,32 +17,33 @@ public class Vector_Practice {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-         int tamanho= 2;
+         int tamanho= 3;
        int[]age = new int [tamanho];
        String[] name = new String [tamanho];
        double[] salary = new double[tamanho];
+       String[] color = new String [tamanho];
        var kb = new Scanner (System.in);
        int i;
        for (i=0; i<tamanho; i++)
        {
+           
+           System.out.println("Please, type your name");
+           //kb.nextLine();
+           name[i] = kb.nextLine();
            System.out.println("Please, type your age");
            age[i] = kb.nextInt();
-           System.out.println("Please, type your name");
-           kb.nextLine();
-           name[i] = kb.nextLine();
-           
            System.out.println("Please, type your salary");
            salary[i] = kb.nextDouble();
-       
+           System.out.println("Please, type your favorite color");
+           kb.nextLine();
+           color[i] = kb.nextLine();
        }
        for (i=0; i<tamanho; i++)
        {
            System.out.println(age[i] + " " + name[i] + " " + salary[i]);
        }
        
-       
-       
-    }
+   }
     
 }
 
