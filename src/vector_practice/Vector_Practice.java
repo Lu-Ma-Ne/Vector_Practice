@@ -18,15 +18,15 @@ public class Vector_Practice {
      */
     public static void main(String[] args) {
          int tamanho= 3;
-       int[]age = new int [tamanho];
-       String[] name = new String [tamanho];
-       double[] salary = new double[tamanho];
-       String[] color = new String [tamanho];
-       var kb = new Scanner (System.in);
+         String[] name = new String [tamanho];
+         int[]age = new int [tamanho];
+         double[] salary = new double[tamanho];
+         String[] color = new String [tamanho];
+         var kb = new Scanner (System.in);
+         
        int i;
        for (i=0; i<tamanho; i++)
        {
-           
            System.out.println("Please, type your name");
            //kb.nextLine();
            name[i] = kb.nextLine();
@@ -40,12 +40,10 @@ public class Vector_Practice {
        }
        for (i=0; i<tamanho; i++)
        {
-           System.out.println(age[i] + " " + name[i] + " " + salary[i]);
+        System.out.println(name[i]+" "+ age[i]+" "+ salary[i]+" "+ color[i]+" ");
        }
-       
-   }
-    
-}
+    }
+ }
 
       
     
